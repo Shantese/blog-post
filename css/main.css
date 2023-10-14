@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.layout {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: 90px auto 50px;
+    grid-template-areas: 
+    "hd hd"
+    "sd mn"
+    "ft ft";
+}
+.header{
+    display: flex;
+    grid-area: hd;
+    border: 1px solid green;
+}
+.sidebar {
+    grid-area: sd;
+    border: 1px solid green;
+}
+.main {
+    grid-area: mn;
+    border: 1px solid green;
+}
+.footer {
+    grid-area: ft;
+    border: 1px solid green;
+}
